@@ -1,7 +1,7 @@
 import { expect, test } from 'claude-code/testing'
 
 import { cells } from '../hooks/markdown'
-import { headingIcon, readPill } from '../hooks/vocabulary'
+import { headingIcon, labelIcon, readPill } from '../hooks/vocabulary'
 
 const reply = (text: string) =>
   ({
@@ -68,6 +68,12 @@ test('a heading takes the icon of its first word', () => {
   // Only a whole first word matches, and a glyph the model typed itself wins.
   expect(headingIcon('Howdy')).toBeUndefined()
   expect(headingIcon(' How it works')).toBeUndefined()
+})
+
+test("a plural label or heading takes its singular word's icon", () => {
+  expect(headingIcon('Risks to plan for')).toBe(headingIcon('Risk'))
+  expect(labelIcon('Risks:', true)).toBe(labelIcon('Risk:', true))
+  expect(headingIcon('Risk')).toBeDefined()
 })
 
 test('cell width counts wide characters twice', () => {

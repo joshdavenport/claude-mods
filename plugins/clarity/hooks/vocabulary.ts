@@ -176,17 +176,36 @@ const LABEL_ICONS: Record<string, string> = {
   what: '',
   where: '',
   caveat: '',
-  caveats: '',
   recommended: '',
   related: '',
-  decisions: '',
-  findings: '',
   blocked: '',
   frontier: '',
   proposed: '',
-  questions: '',
+  question: '',
   settled: '',
   open: '',
+  changed: '',
+  new: '',
+  test: '',
+  check: '',
+  spec: '',
+  standards: '',
+  docs: '',
+  summary: '',
+  commit: '',
+  'final commit': '',
+  pr: '',
+  issue: '',
+  recommendation: '',
+  fixed: '',
+  glossary: '',
+  adr: '',
+  'close-out': '',
+  handoff: '',
+  cleanup: '',
+  answer: '',
+  resolution: '',
+  map: '',
 }
 
 /** Bold lead-ins ending in a colon that name the action a pill calls for; they take an icon anywhere. */
@@ -245,7 +264,7 @@ export function labelIcon(label: string, isLeading: boolean): string | undefined
     .toLowerCase()
   const hasColon = label.trimEnd().endsWith(':')
   if (hasColon && ACTION_ICONS[word]) return ACTION_ICONS[word]
-  return isLeading ? LABEL_ICONS[word] : undefined
+  return isLeading ? labelWordIcon(word) : undefined
 }
 
 /** The icon a heading takes from its first word, so "How it works" draws with How's icon. */
@@ -256,7 +275,12 @@ export function headingIcon(heading: string): string | undefined {
     .split(/\s+/)[0]!
     .replace(/\P{L}+$/u, '')
     .toLowerCase()
-  return LABEL_ICONS[first]
+  return labelWordIcon(first)
+}
+
+/** A label word's icon; a plural falls back to its singular, so "Risks" draws with Risk's icon. */
+function labelWordIcon(word: string): string | undefined {
+  return LABEL_ICONS[word] ?? (word.endsWith('s') ? LABEL_ICONS[word.slice(0, -1)] : undefined)
 }
 
 const pills = (words: string[]) => words.map(w => `[[${w}]]`).join(', ')
@@ -268,7 +292,7 @@ export function replyGuidance(): string {
   return `# Reply style
 These rules shape replies written to the user. Their interface colors pills, adds icons, and cannot change text size.
 
-- **Label every reply.** Start the first substantive line with a bold label, even for a one-line update, and give each subject in a multi-part reply a short heading or a bullet with a bold lead label. Write the label as a plain word; the interface adds its icon. Never type icon glyphs. Labels with an icon: ${titled(Object.keys(LABEL_ICONS))}. A heading takes the icon of its first word, so "How it works" gets How's icon. Prefer these; any other label shows without an icon.
+- **Label every reply.** Start the first substantive line with a bold label, even for a one-line update, and give each subject in a multi-part reply a short heading or a bullet with a bold lead label. Write the label as a plain word; the interface adds its icon. Never type icon glyphs. Labels with an icon: ${titled(Object.keys(LABEL_ICONS))}. A heading takes the icon of its first word, so "How it works" gets How's icon, and a plural takes its singular's, so "Risks" gets Risk's. Prefer these; any other label shows without an icon.
 - **Shape follows information.** Use \`├──\` and \`└──\` for what belongs to what, \`→\` for a sequence, \`✓\` or \`✗\` beside a checked item. Write tree rows as indented lines directly under their parent with no list dash, one line per row. A one-line answer can stay one line.
 - **Bold the anchor terms.** Treat the projects, components, choices, options, and statuses under discussion as the nodes of a graph, and bold them where they carry the point: a first mention in a section, a bullet's lead label such as **Cause:**, and the recommendation or decision the user must make. One to three bold spans per paragraph or bullet; bolding every noun erases the signal. Italicize sparingly, for contrast and meaning-changing words such as *not*, *only*, or *unverified*.
 - **Pills are required, not optional.** A pill is \`[[Word]]\` beside the subject it describes; the interface colors it and adds its icon from the word. A pill names a state or an ask, never an adjective. Use exactly these words so the same state always reads the same:
