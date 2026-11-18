@@ -1,6 +1,6 @@
 {
   "name": "skill-prompt-view",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Shows each skill's expanded prompt inline in the transcript, as the model received it",
   "author": {
     "name": "Josh"
