@@ -179,6 +179,14 @@ const LABEL_ICONS: Record<string, string> = {
   caveats: '',
   recommended: '',
   related: '',
+  decisions: '',
+  findings: '',
+  blocked: '',
+  frontier: '',
+  proposed: '',
+  questions: '',
+  settled: '',
+  open: '',
 }
 
 /** Bold lead-ins ending in a colon that name the action a pill calls for; they take an icon anywhere. */

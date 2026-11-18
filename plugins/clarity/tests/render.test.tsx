@@ -62,6 +62,8 @@ test('a heading takes the icon of its first word', () => {
   expect(headingIcon('How')).toBeDefined()
   expect(headingIcon('How it works')).toBe(headingIcon('How'))
   expect(headingIcon('Caveats:')).toBe(headingIcon('Caveat'))
+  expect(headingIcon('Findings so far')).toBe(headingIcon('Finding'))
+  expect(headingIcon('Questions for you')).toBeDefined()
   expect(headingIcon('What I need from you')).toBe(headingIcon('What'))
   // Only a whole first word matches, and a glyph the model typed itself wins.
   expect(headingIcon('Howdy')).toBeUndefined()
