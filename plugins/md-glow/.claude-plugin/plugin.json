@@ -1,6 +1,6 @@
 {
   "name": "md-glow",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Offers markdown files written in the session for viewing in a pane, rendered by the local glow CLI",
   "author": {
     "name": "Josh"

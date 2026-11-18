@@ -1,6 +1,6 @@
 {
   "name": "clarity",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Brings extra clarity to Claude's replies: status pills, labels with icons, distinct headings and a closing \"What I need from you\" section, drawn by its own markdown renderer",
   "author": {
     "name": "Josh"

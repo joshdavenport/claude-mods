@@ -1,6 +1,6 @@
 {
   "name": "grill-q-prompt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "When a reply asks a grilling round of numbered questions (❓ Q1, ❓ Q2, …), fills the empty prompt box with an answer template: one `qN. ` line per question.",
   "author": {
     "name": "Josh"
