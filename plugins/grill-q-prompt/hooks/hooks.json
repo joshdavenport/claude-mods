@@ -1,0 +1,4 @@
+{
+  "description": "A turn.complete hook that fills the empty prompt box with a `qN. ` line for each ❓ question the reply asked",
+  "modules": ["./register.ts"]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "joshdavenport-mods",
+  "owner": {
+    "name": "Josh"
+  },
+  "metadata": {
+    "description": "Josh's Claude Code mods",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "clarity",
+      "source": "./plugins/clarity",
+      "description": "Draws assistant replies with its own markdown renderer and teaches the model a reply vocabulary: status pills, label icons, coloured and underlined headings"
+    },
+    {
+      "name": "grill-q-prompt",
+      "source": "./plugins/grill-q-prompt",
+      "description": "When a reply asks a grilling round of numbered questions (❓ Q1, ❓ Q2, …), fills the empty prompt box with an answer template: one `qN. ` line per question."
+    },
+    {
+      "name": "md-glow",
+      "source": "./plugins/md-glow",
+      "description": "Offers markdown files written in the session for viewing in a pane, rendered by the local glow CLI"
+    },
+    {
+      "name": "skill-augment",
+      "source": "./plugins/skill-augment",
+      "description": "Augments the prompts of skills you can't edit: markdown files under ~/.claude/skills-augment and <project>/.claude/skills-augment name the skills they add to and whether their text goes at the start or end of the skill's prompt."
+    },
+    {
+      "name": "skill-prompt-view",
+      "source": "./plugins/skill-prompt-view",
+      "description": "Shows each skill's expanded prompt inline in the transcript, as the model received it"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "skill-prompt-view",
+  "version": "0.1.0",
+  "description": "Shows each skill's expanded prompt inline in the transcript, as the model received it",
+  "author": {
+    "name": "Josh"
+  },
+  "homepage": "https://github.com/joshdavenport/claude-mods/tree/main/plugins/skill-prompt-view",
+  "types": "./types/index.d.ts"
+}

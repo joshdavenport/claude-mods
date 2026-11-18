@@ -1,0 +1,10 @@
+{
+  "name": "md-glow",
+  "version": "0.1.0",
+  "description": "Offers markdown files written in the session for viewing in a pane, rendered by the local glow CLI",
+  "author": {
+    "name": "Josh"
+  },
+  "homepage": "https://github.com/joshdavenport/claude-mods/tree/main/plugins/md-glow",
+  "types": "./types/index.d.ts"
+}
