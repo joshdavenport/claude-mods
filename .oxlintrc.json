@@ -1,4 +1,4 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "ignorePatterns": ["plugins/clarity/hooks/vendor"]
+  "ignorePatterns": ["plugins/clarity/hooks/vendor", ".showcase"]
 }

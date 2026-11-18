@@ -1,5 +1,7 @@
 # skill-prompt-view
 
+![skill-prompt-view in a Claude Code session](../../docs/showcase/skill-prompt-view.png)
+
 A Claude Code mod that shows every skill's expanded prompt inline in the transcript.
 
 When a skill runs, typed as `/name` or called by the model through the Skill tool, Claude Code hides the prompt it sends the model; the transcript shows only the command line. This mod adds a row under it holding the prompt as the model received it, after `!` shell blocks ran and after any other plugin's rewrite, drawn as markdown. Each row starts folded to one line; Show expands it, Hide folds it again.

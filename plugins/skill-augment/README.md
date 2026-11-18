@@ -1,5 +1,7 @@
 # skill-augment
 
+![skill-augment in a Claude Code session](../../docs/showcase/skill-augment.png)
+
 A Claude Code mod that adds your own text to the prompts of skills you can't
 practically edit, such as those shipped in plugins.
 

@@ -6,7 +6,7 @@ Josh's Claude Code mods (plugins built on function hooks), one per folder under 
 
 The plugins are versioned together. A release bumps `version` in every `plugins/*/.claude-plugin/plugin.json`, `metadata.version` in the marketplace file and `version` in `package.json` to the same value, then tags `v<version>`. Installs from GitHub only see a change after a version bump; this machine reads the plugins straight from this folder (see `README.md`), so `/reload-plugins` picks up an edit without one.
 
-A new plugin gets a folder under `plugins/`, an entry in the marketplace file, and a row in the root `README.md` table.
+A new plugin gets a folder under `plugins/`, an entry in the marketplace file, a row in the root `README.md` table, and a showcase: a scenario in `scripts/showcase/scenarios.ts` and its image (`pnpm showcase <mod>`) under the README's title. A change to what a mod shows on screen means regenerating its image.
 
 ## The API has no docs
 

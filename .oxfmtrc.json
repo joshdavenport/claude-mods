@@ -3,5 +3,5 @@
   "semi": false,
   "singleQuote": true,
   "arrowParens": "avoid",
-  "ignorePatterns": ["pnpm-lock.yaml", "plugins/clarity/hooks/vendor"]
+  "ignorePatterns": ["pnpm-lock.yaml", "plugins/clarity/hooks/vendor", ".showcase"]
 }

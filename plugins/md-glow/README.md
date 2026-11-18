@@ -1,5 +1,7 @@
 # md-glow
 
+![md-glow in a Claude Code session](../../docs/showcase/md-glow.png)
+
 A Claude Code mod that shows markdown files written in the session in a pane, rendered by [glow](https://github.com/charmbracelet/glow).
 
 - **Offer:** when a Write creates or rewrites a `.md` file, a row above the prompt names it, with View with glow and Dismiss buttons. It stays until dismissed or replaced by the next one.

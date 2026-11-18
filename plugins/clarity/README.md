@@ -1,6 +1,8 @@
 # clarity
 
-A Claude Code mod that draws assistant replies with its own markdown renderer, so their look is ours to change.
+![clarity in a Claude Code session](../../docs/showcase/clarity.png)
+
+Bring extra clarity to Claude's responses. Uses a custom markdown render over Claude Code's own to achieve the look.
 
 - **Pills:** `[[Done]]`, `[[Failed]]`, `[[Needs you]]` and the rest draw as rounded, coloured chips with an icon from their word.
 - **Headings:** every level in one colour, told apart by the line under it: `=` for h1, `-` for h2, `·` for h3, a spaced grey `· · ·` for h4, and none below that.
@@ -10,7 +12,12 @@ A Claude Code mod that draws assistant replies with its own markdown renderer, s
 
 Only the display changes: the stored message keeps its markdown (ctrl+o shows it).
 
-The vocabulary, icons and reply rules come from [pi-emphasis](https://github.com/johnlindquist/pi-emphasis) by John Lindquist (MIT, see `hooks/pi-emphasis.LICENSE`).
+## Credits
+
+This mod takes heavily from the following awesome creators ideas/creations:
+
+- John Lindquist's [pi-emphasis](https://github.com/johnlindquist/pi-emphasis) (MIT, see `hooks/pi-emphasis.LICENSE`) extension for pi. The vocabulary, icons and reply rules come from that project, implemented in a Claude Code mod.
+- Mike Cann's [what you need from me idea](https://x.com/mikeysee/status/2105463787029713341) ([video](https://www.youtube.com/watch?v=fXETGbqwrng&time_continue=0&source_ve_path=MjM4NTE&embeds_referring_euri=https%3A%2F%2Fx.com%2F)). The instruction is automatically added to your prompts via this mod's prompt injection.
 
 ## Install
 

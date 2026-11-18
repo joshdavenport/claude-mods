@@ -8,7 +8,8 @@
     "typecheck": "for d in plugins/*/; do tsc -p \"$d\" || exit 1; done",
     "validate": "claude plugin validate . && for d in plugins/*/; do claude plugin validate \"$d\" || exit 1; done",
     "format": "oxfmt",
-    "lint": "oxfmt --check && oxlint && pnpm typecheck && pnpm validate"
+    "lint": "oxfmt --check && oxlint && pnpm typecheck && pnpm validate",
+    "showcase": "node scripts/showcase/index.ts"
   },
   "devDependencies": {
     "oxfmt": "^0.79.0",

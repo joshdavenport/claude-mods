@@ -1,5 +1,7 @@
 # grill-q-prompt
 
+![grill-q-prompt in a Claude Code session](../../docs/showcase/grill-q-prompt.png)
+
 A Claude Code mod for answering grilling rounds. When a reply asks numbered
 questions, the empty prompt box fills with a line per question, ready to
 answer in:

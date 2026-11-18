@@ -53,6 +53,9 @@ pnpm install
 pnpm test        # claude plugin test, for every mod
 pnpm lint        # oxfmt check, oxlint, typecheck, claude plugin validate
 pnpm format      # oxfmt
+pnpm showcase    # regenerate docs/showcase/<mod>.png (all mods, or name some)
 ```
+
+`pnpm showcase` drives each mod in a real Claude Code session (Haiku) in a background [Rex](https://www.superlogical.com/rex) session, captures the terminal as HTML and screenshots it with headless Chrome. It needs Rex, Chrome, the JetBrainsMono Nerd Font and the mods installed from this checkout. Leave the `showcase-*` sessions unopened while it runs: opening one hands the terminal's size to the app. Scenarios live in `scripts/showcase/scenarios.ts`.
 
 `pnpm typecheck` needs `plugins/<mod>/.claude-plugin/types/`, which Claude Code writes when an interactive `claude --plugin-dir plugins/<mod>` session loads the mod. `CLAUDE.md` has the rules the engine and validator enforce, and how releases are versioned.
