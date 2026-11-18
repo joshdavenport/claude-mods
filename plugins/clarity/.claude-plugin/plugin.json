@@ -1,7 +1,7 @@
 {
   "name": "clarity",
   "version": "0.1.0",
-  "description": "Draws assistant replies with its own markdown renderer and teaches the model a reply vocabulary: status pills, label icons, coloured and underlined headings",
+  "description": "Brings extra clarity to Claude's replies: status pills, labels with icons, distinct headings and a closing \"What I need from you\" section, drawn by its own markdown renderer",
   "author": {
     "name": "Josh"
   },

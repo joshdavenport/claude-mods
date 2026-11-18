@@ -2,13 +2,13 @@
 
 A set of [Claude Code](https://claude.com/claude-code) mods: plugins built on function hooks that change how Claude Code looks and behaves. They live in one marketplace and share one version.
 
-| Mod                                            | What it does                                                                                                                                               |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [clarity](plugins/clarity)                     | Draws assistant replies with its own markdown renderer (status pills, label icons, underlined headings) and teaches the model a reply vocabulary to match. |
-| [grill-q-prompt](plugins/grill-q-prompt)       | When a reply asks a grilling round of numbered `❓ Q1`, `❓ Q2` questions, fills the empty prompt box with a `q1. `, `q2. ` answer template.               |
-| [md-glow](plugins/md-glow)                     | Offers each markdown file written in the session for viewing in a pane, rendered by the local `glow` CLI.                                                  |
-| [skill-augment](plugins/skill-augment)         | Adds your own markdown to the prompts of skills you can't edit, such as those shipped in plugins.                                                          |
-| [skill-prompt-view](plugins/skill-prompt-view) | Shows each skill's expanded prompt inline in the transcript, as the model received it.                                                                     |
+| Mod                                            | What it does                                                                                                                                                                   |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [clarity](plugins/clarity)                     | Brings extra clarity to Claude's replies: status pills, labels with icons, distinct headings and a closing "What I need from you" section, drawn by its own markdown renderer. |
+| [grill-q-prompt](plugins/grill-q-prompt)       | When a reply asks a grilling round of numbered `❓ Q1`, `❓ Q2` questions, fills the empty prompt box with a `q1. `, `q2. ` answer template.                                   |
+| [md-glow](plugins/md-glow)                     | Offers each markdown file written in the session for viewing in a pane, rendered by the local `glow` CLI.                                                                      |
+| [skill-augment](plugins/skill-augment)         | Adds your own markdown to the prompts of skills you can't edit, such as those shipped in plugins.                                                                              |
+| [skill-prompt-view](plugins/skill-prompt-view) | Shows each skill's expanded prompt inline in the transcript, as the model received it.                                                                                         |
 
 ## Install
 
